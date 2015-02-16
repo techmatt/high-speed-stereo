@@ -33,10 +33,10 @@
             this.timerInitialize = new System.Windows.Forms.Timer(this.components);
             this.timerDisconnectCheck = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3DView = new System.Windows.Forms.RadioButton();
+            this.radioButton2DView = new System.Windows.Forms.RadioButton();
             this.helpBox = new System.Windows.Forms.GroupBox();
             this.textBoxCommands = new System.Windows.Forms.TextBox();
-            this.radioButton2DView = new System.Windows.Forms.RadioButton();
-            this.radioButton3DView = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.helpBox.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mode";
             // 
+            // radioButton3DView
+            // 
+            this.radioButton3DView.AutoSize = true;
+            this.radioButton3DView.Location = new System.Drawing.Point(6, 45);
+            this.radioButton3DView.Name = "radioButton3DView";
+            this.radioButton3DView.Size = new System.Drawing.Size(69, 19);
+            this.radioButton3DView.TabIndex = 0;
+            this.radioButton3DView.TabStop = true;
+            this.radioButton3DView.Text = "3D View";
+            this.radioButton3DView.UseVisualStyleBackColor = true;
+            this.radioButton3DView.CheckedChanged += new System.EventHandler(this.radioButton3DView_CheckedChanged);
+            // 
+            // radioButton2DView
+            // 
+            this.radioButton2DView.AutoSize = true;
+            this.radioButton2DView.Location = new System.Drawing.Point(6, 20);
+            this.radioButton2DView.Name = "radioButton2DView";
+            this.radioButton2DView.Size = new System.Drawing.Size(69, 19);
+            this.radioButton2DView.TabIndex = 0;
+            this.radioButton2DView.TabStop = true;
+            this.radioButton2DView.Text = "2D View";
+            this.radioButton2DView.UseVisualStyleBackColor = true;
+            this.radioButton2DView.CheckedChanged += new System.EventHandler(this.radioButton2DView_CheckedChanged);
+            // 
             // helpBox
             // 
             this.helpBox.Controls.Add(this.textBoxCommands);
@@ -90,34 +114,11 @@
             this.textBoxCommands.Size = new System.Drawing.Size(233, 130);
             this.textBoxCommands.TabIndex = 0;
             // 
-            // radioButton2DView
-            // 
-            this.radioButton2DView.AutoSize = true;
-            this.radioButton2DView.Location = new System.Drawing.Point(6, 20);
-            this.radioButton2DView.Name = "radioButton2DView";
-            this.radioButton2DView.Size = new System.Drawing.Size(69, 19);
-            this.radioButton2DView.TabIndex = 0;
-            this.radioButton2DView.TabStop = true;
-            this.radioButton2DView.Text = "2D View";
-            this.radioButton2DView.UseVisualStyleBackColor = true;
-            this.radioButton2DView.CheckedChanged += new System.EventHandler(this.radioButton2DView_CheckedChanged);
-            // 
-            // radioButton3DView
-            // 
-            this.radioButton3DView.AutoSize = true;
-            this.radioButton3DView.Location = new System.Drawing.Point(6, 45);
-            this.radioButton3DView.Name = "radioButton3DView";
-            this.radioButton3DView.Size = new System.Drawing.Size(69, 19);
-            this.radioButton3DView.TabIndex = 0;
-            this.radioButton3DView.TabStop = true;
-            this.radioButton3DView.Text = "3D View";
-            this.radioButton3DView.UseVisualStyleBackColor = true;
-            // 
             // UIWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 254);
+            this.ClientSize = new System.Drawing.Size(408, 188);
             this.Controls.Add(this.helpBox);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

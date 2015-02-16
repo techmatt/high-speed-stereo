@@ -34,11 +34,6 @@
     <ClInclude Include="vizzer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libsynth\libsynth.vcxproj">
-      <Project>{6c7e0e89-dc69-4ac9-8114-2b5132ea2d6e}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\shaders\modelRendererColor.shader" />
     <None Include="..\shaders\modelRendererTexture.shader" />
   </ItemGroup>

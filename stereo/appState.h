@@ -10,8 +10,8 @@ inline string modeName(VizzerMode mode)
 {
     switch (mode)
     {
-    case VizzerMode2DView: return "render";
-    case VizzerMode3DView: return "synth";
+    case VizzerMode2DView: return "2D View";
+    case VizzerMode3DView: return "3D View";
     default: return "unknown mode";
     }
 }

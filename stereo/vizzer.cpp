@@ -6,7 +6,7 @@ const bool runUIDebugger = false;
 void Vizzer::init(ml::ApplicationData& app)
 {
     ParameterFile params;
-    const string file = "../../synthParamsDefault.txt";
+    const string file = "../../params.txt";
     if (!ml::util::fileExists(file))
     {
         std::cerr << "Parameter file not found: " << file << endl;
@@ -14,9 +14,6 @@ void Vizzer::init(ml::ApplicationData& app)
         return;
     }
     params.addParameterFile(file);
-#ifdef _DEBUG
-    params.addParameterFile("../../synthParamsDefaultDebug.txt");
-#endif
 
     params.overrideParameter("scanName", "all");
 

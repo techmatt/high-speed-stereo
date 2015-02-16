@@ -161,11 +161,11 @@ namespace UIWindow
 
         private void radioButton2DView_CheckedChanged(object sender, EventArgs e)
         {
-            SendMessage("mode view2D");
+            SendMessage("mode 2DView");
         }
         private void radioButton3DView_CheckedChanged(object sender, EventArgs e)
         {
-            SendMessage("mode view3D");
+            SendMessage("mode 3DView");
         }
     }
 }
