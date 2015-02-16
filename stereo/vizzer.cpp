@@ -48,6 +48,8 @@ void Vizzer::init(ml::ApplicationData& app)
     state.updateModeInterface();
 
     registerEventHandlers(app);
+
+    state.stereo.initSingle(stereoParams().dataDir + "testA/left.png", stereoParams().dataDir + "testA/right.png");
 }
 
 void Vizzer::registerEventHandlers(ml::ApplicationData& app)
@@ -68,14 +70,6 @@ void Vizzer::render(ml::ApplicationData& app)
     state.eventMap.dispatchEvents(state.ui);
 
     state.modeInterface->render();
-
-    if (state.showBBoxes)
-    {
-        for (UINT bboxIndex = 0; bboxIndex < state.objectBBoxes.size(); bboxIndex++)
-        {
-            state.renderer.renderMesh(app.graphics.castD3D11(), state.camera.cameraPerspective(), state.objectBBoxes[bboxIndex], vec3f(1.0f, 1.0f, 1.0f));
-        }
-    }
 
     vector< pair<string, RGBColor> > lines;
 

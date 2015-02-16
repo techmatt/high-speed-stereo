@@ -33,7 +33,7 @@ struct AppState
 {
     AppState()
     {
-        showBBoxes = false;
+        
     }
 
     void updateModeInterface()
@@ -49,11 +49,9 @@ struct AppState
 
     AssetRenderer renderer;
 
-    bool showBBoxes;
-
     Cameraf camera;
 
-    vector<D3D11TriMesh> objectBBoxes;
+    StereoFrame stereo;
 
     VizzerMode mode;
     ModeView2D modeView2D;

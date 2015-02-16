@@ -25,6 +25,8 @@ using std::function;
 #include "eventMap.h"
 #include "assetRenderer.h"
 
+#include "../stereoAnalysis/stereoFrame.h"
+
 struct AppState;
 
 class VizzerModeInterface

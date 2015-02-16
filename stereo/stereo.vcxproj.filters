@@ -12,6 +12,9 @@
     </ClCompile>
     <ClCompile Include="assetRenderer.cpp" />
     <ClCompile Include="eventMap.cpp" />
+    <ClCompile Include="..\stereoAnalysis\stereoFrame.cpp">
+      <Filter>stereoAnalysis</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
@@ -27,6 +30,9 @@
     <ClInclude Include="assetRenderer.h" />
     <ClInclude Include="eventMap.h" />
     <ClInclude Include="stereoParams.h" />
+    <ClInclude Include="..\stereoAnalysis\stereoFrame.h">
+      <Filter>stereoAnalysis</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="modes">
@@ -34,6 +40,9 @@
     </Filter>
     <Filter Include="shaders">
       <UniqueIdentifier>{9b7a56e2-48c2-44e3-a202-af9f4080303b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stereoAnalysis">
+      <UniqueIdentifier>{b9670662-2bdf-49ac-84ae-cfc0a28c5e25}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,5 +52,8 @@
     <None Include="..\shaders\modelRendererTexture.shader">
       <Filter>shaders</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\params.txt" />
   </ItemGroup>
 </Project>

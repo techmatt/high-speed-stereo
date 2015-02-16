@@ -1,2 +1,2 @@
 
-dataDir=V:\stereo\
+dataDir=V:\data\stereo\
