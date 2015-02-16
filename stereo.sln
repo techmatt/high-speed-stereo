@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stereo", "stereo\stereo.vcxproj", "{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96348DE0-2883-47C1-AFFB-040873ADA409} = {96348DE0-2883-47C1-AFFB-040873ADA409}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIStereo", "UIstereo\UIStereo.csproj", "{96348DE0-2883-47C1-AFFB-040873ADA409}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug-IDL0|Any CPU = Debug-IDL0|Any CPU
+		Debug-IDL0|Mixed Platforms = Debug-IDL0|Mixed Platforms
+		Debug-IDL0|x64 = Debug-IDL0|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug|x64.ActiveCfg = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug|x64.Build.0 = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug-IDL0|Any CPU.ActiveCfg = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug-IDL0|Mixed Platforms.ActiveCfg = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug-IDL0|Mixed Platforms.Build.0 = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug-IDL0|x64.ActiveCfg = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Debug-IDL0|x64.Build.0 = Debug|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Release|Any CPU.ActiveCfg = Release|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Release|Mixed Platforms.Build.0 = Release|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Release|x64.ActiveCfg = Release|x64
+		{8AFDBC5C-C3FD-4EB4-927D-0AD5AC6BBF16}.Release|x64.Build.0 = Release|x64
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug-IDL0|Any CPU.ActiveCfg = Debug-IDL0|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug-IDL0|Any CPU.Build.0 = Debug-IDL0|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug-IDL0|Mixed Platforms.ActiveCfg = Debug-IDL0|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug-IDL0|Mixed Platforms.Build.0 = Debug-IDL0|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Debug-IDL0|x64.ActiveCfg = Debug-IDL0|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{96348DE0-2883-47C1-AFFB-040873ADA409}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
