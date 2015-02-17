@@ -15,11 +15,7 @@ void Vizzer::init(ml::ApplicationData& app)
     }
     params.addParameterFile(file);
 
-    params.overrideParameter("scanName", "all");
-
-    app.graphics.castD3D11().toggleCullMode();
-
-    params.overrideParameter("sceneList", "All");
+    app.graphics.castD3D11().setCullMode(D3D11_CULL_NONE);
 
     initStereoParams(params);
 

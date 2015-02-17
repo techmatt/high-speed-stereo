@@ -9,7 +9,7 @@ void ModeView2D::init(ml::ApplicationData& _app, AppState &_state)
 
 void ModeView2D::render()
 {
-    
+    //state->renderer.renderViewPlane()
 }
 
 void ModeView2D::keyDown(UINT key)

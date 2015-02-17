@@ -31,9 +31,7 @@ VertexShaderOutput vertexShaderMain( float4 position : position,
 
 float4 pixelShaderMain( VertexShaderOutput input ) : SV_Target
 {
-	float3 lightDir = normalize(float3(1.0, -2.0, 3.0));
-	float3 lightColor = abs(dot(normalize(input.normal), lightDir)) * float3(0.6, 0.6, 0.6) + float3(0.4, 0.4, 0.4);
 	float4 texColor = modelTexture.Sample(modelSampler, float2(input.texCoord.x, 1.0 - input.texCoord.y));
 	
-	return float4( modelColor.xyz * lightColor.xyz * texColor.xyz, 1.0f );
+	return float4( modelColor.xyz * texColor.xyz, 1.0f );
 }
