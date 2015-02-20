@@ -13,8 +13,8 @@ void StereoCameraHistory::buildDescriptor(size_t x, size_t y, PixelDescriptor &r
 
     const Grid2<BYTE> &image = images[0];
 
-    if (x <= windowSize + 1 || x >= image.cols() - windowSize - 1 ||
-        y <= windowSize + 1 || y >= image.rows() - windowSize - 1)
+    if (x <= windowSize + 1 || x >= image.dimX() - windowSize - 1 ||
+        y <= windowSize + 1 || y >= image.dimY() - windowSize - 1)
     {
         result.valid = false;
         return;
@@ -22,7 +22,7 @@ void StereoCameraHistory::buildDescriptor(size_t x, size_t y, PixelDescriptor &r
 
     const BYTE *imagePtr = image.ptr();
     BYTE *resultPtr = &result.data[0];
-    const size_t imageWidth = image.cols();
+    const size_t imageWidth = image.dimX();
 
     UINT resultIndex = 0;
     for (int yOffset = -windowSize; yOffset <= windowSize; yOffset++)
@@ -39,11 +39,11 @@ void StereoFrame::initSingle(const string &filenameLeft, const string &filenameR
     Bitmap bmpLeft = ml::LodePNG::load(filenameLeft);
     Bitmap bmpRight = ml::LodePNG::load(filenameRight);
 
-    width = bmpLeft.cols();
-    height = bmpLeft.rows();
+    width = bmpLeft.dimX();
+    height = bmpLeft.dimY();
 
-    leftCamera.images.push_back(Grid2<BYTE>(height, width, [&](size_t row, size_t col) { return bmpLeft(row, col).r; }));
-    rightCamera.images.push_back(Grid2<BYTE>(height, width, [&](size_t row, size_t col) { return bmpRight(row, col).r; }));
+    leftCamera.images.push_back(Grid2<BYTE>(width, height, [&](size_t x, size_t y) { return bmpLeft(x, y).r; }));
+    rightCamera.images.push_back(Grid2<BYTE>(width, height, [&](size_t x, size_t y) { return bmpRight(x, y).r; }));
 }
 
 Grid2<double> StereoFrame::computeDisparity() const
