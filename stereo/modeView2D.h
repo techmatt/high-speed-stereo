@@ -11,4 +11,9 @@ struct ModeView2D : public VizzerModeInterface
 
     ml::ApplicationData *app;
     AppState *state;
+
+    D3D11Canvas2D canvas;
+    D3D11Canvas2D immediateCanvas;
+
+    vec2i leftPickedCoord;
 };

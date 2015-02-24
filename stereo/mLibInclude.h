@@ -19,4 +19,6 @@
 #include <mLibD3D11Font.h>
 #include <mLibDepthCamera.h>
 #include <mLibFreeImage.h>
+#include <mLibANN.h>
+//#include <mLibImageProcessing.h>
 

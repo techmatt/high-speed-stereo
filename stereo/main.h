@@ -8,6 +8,8 @@
 #include "mLibInclude.h"
 
 using namespace ml;
+using Bitmap = ml::ColorImageR8G8B8A8;
+
 using std::vector;
 using std::set;
 using std::map;

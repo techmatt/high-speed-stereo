@@ -13,6 +13,8 @@ struct StereoCameraHistory
 {
     void buildDescriptor(size_t x, size_t y, PixelDescriptor &result) const;
 
+    Bitmap bmp;
+
     //
     // 0 = most recent image, larger values go into the past
     //
@@ -26,7 +28,7 @@ struct StereoFrame
     Grid2<double> computeDisparity() const;
 
     StereoCameraHistory leftCamera, rightCamera;
-    size_t width, height;
+    int width, height;
 
 private:
     static double compareDescriptors(const PixelDescriptor &a, const PixelDescriptor &b)

@@ -19,6 +19,8 @@ void Vizzer::init(ml::ApplicationData& app)
 
     initStereoParams(params);
 
+    state.stereo.initSingle(stereoParams().dataDir + "testA/left.png", stereoParams().dataDir + "testA/right.png");
+
     state.modeView2D.init(app, state);
     state.modeView3D.init(app, state);
 
@@ -26,8 +28,6 @@ void Vizzer::init(ml::ApplicationData& app)
 
     state.camera = ml::Camera<float>("3.1007 -4.67105 6.07874 1 0 0 0 0.836286 -0.548293 0 0.548293 0.836286 0 0 1 60 1.39502 0.01 1000");
     state.camera.updateAspectRatio((float)app.window.width() / app.window.height());
-
-    app.graphics.castD3D11().captureBackBuffer();
 
     state.renderer.init(app.graphics.castD3D11());
 
@@ -44,8 +44,6 @@ void Vizzer::init(ml::ApplicationData& app)
     state.updateModeInterface();
 
     registerEventHandlers(app);
-
-    state.stereo.initSingle(stereoParams().dataDir + "testA/left.png", stereoParams().dataDir + "testA/right.png");
 }
 
 void Vizzer::registerEventHandlers(ml::ApplicationData& app)
@@ -81,8 +79,6 @@ void Vizzer::render(ml::ApplicationData& app)
 void Vizzer::resize(ml::ApplicationData& app)
 {
     state.camera.updateAspectRatio((float)app.window.width() / app.window.height());
-    app.graphics.resize(app.window.width(), app.window.height());
-    //m_font.reset(app.graphics);
 }
 
 void Vizzer::keyDown(ml::ApplicationData& app, UINT key)
